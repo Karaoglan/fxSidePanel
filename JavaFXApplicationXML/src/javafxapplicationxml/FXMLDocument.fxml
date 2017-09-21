@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplicationxml.FXMLDocumentController">
+    <children>
+      <AnchorPane fx:id="rightAnchor" layoutX="201.0" prefHeight="900.0" prefWidth="1398.0" />
+        <VBox prefHeight="900.0" prefWidth="201.0">
+            <children>
+                <ImageView fitHeight="233.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@back.jpg" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="b1" buttonType="RAISED" onAction="#changeColor" prefHeight="187.0" prefWidth="201.0" ripplerFill="#fc0000" style="-fx-background-color: #f1f1f1;" text="Color 1" />
+                <JFXButton fx:id="b2" buttonType="RAISED" layoutX="10.0" layoutY="123.0" onAction="#changeColor" prefHeight="236.0" prefWidth="201.0" ripplerFill="#fc0000" style="-fx-background-color: #f1f1f1;" text="Color 2" />
+                <JFXButton fx:id="b3" buttonType="RAISED" layoutX="10.0" layoutY="197.0" onAction="#changeColor" prefHeight="183.0" prefWidth="201.0" ripplerFill="#fc0000" style="-fx-background-color: #f1f1f1;" text="Color 3" />
+                <JFXButton fx:id="exit" buttonType="RAISED" layoutX="10.0" layoutY="271.0" onAction="#exit" prefHeight="198.0" prefWidth="201.0" ripplerFill="#fc0000" style="-fx-background-color: #f1f1f1;" text="EXIT" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
